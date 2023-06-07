@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="image-container">
+                
+            </div>
+            <div class="upload-btn">
+                <input type="file" id="myFile" name="filename">
+                <label id="files" for="myFile">Upload Image
+                </label>
+                <label for="" style="display: none;" id="new-image">New Image</label>
+            </div>
+        </div>
+        <div class="settings-section">
+            <form action="">
+                <label for="">Blur</label>
+                <input id="blur" class="slider-container" type="range" value="0" max="10">
+                <label for="">Contrast</label>
+                <input id="contrast" class="slider-container" type="range" value="50%" max="10">
+                <label for="">Brightness</label>
+                <input id="brightness" class="slider-container" type="range" value="50%" max="10">
+                <label for="">Sepia</label>
+                <input id="sepia" class="slider-container" type="range" value="0" max="10">
+                <label for="">Grayscale</label>
+                <input id="grayscale" class="slider-container" type="range" value="0" max="10">
+                <label for="">Saturate</label>
+                <input id="saturate" class="slider-container" type="range" value="0" max="10">
+                <label for="">Hue Rotate</label>
+                <input id="hue" class="slider-container" type="range" value="0" max="10">
+            </form>
+            <div class="buttons">
+                <div class="reset">
+                    <button>Reset</button>
+                </div>
+                <div class="download">
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Coded By <a href="https://www.youtube.com/channel/UC-yKlRDHE-YbSe7PRPTwAdA" target="_blank">Zeezo</a> シ</div>
+    <script src="js/main.js"></script>
+</body>
+</html>

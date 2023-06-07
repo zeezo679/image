@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-color: none;
+  width: 80%;
+  border-radius: 15px;
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container .image-section {
+  text-align: center;
+  width: 60%;
+  position: relative;
+}
+
+.container .image-section .image-container {
+  width: 100%;
+}
+
+.container .image-container img {
+  width: 100%;
+}
+
+.container .image-section label {
+  display: block;
+  padding: 16px 30px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 3px dotted white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.container .image-section label:hover {
+  background-color: #137ef1;
+}
+
+.container .settings-section {
+  flex: 20%;
+  margin: auto;
+}
+
+.container .settings-section .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.container .settings-section .buttons button {
+  padding: 16px 30px;
+  border: none;
+  background-color: #137ef1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .settings-section .buttons button:hover {
+  background-color: #0f6acb;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container form .slider-container {
+  transform: scaleX(-1);
+  width: 100%;
+}
+
+.container form label {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.container form label:not(:first-child) {
+  margin-top: 60px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: #222;
+  }
+
+  .container {
+    background-color: none;
+    width: 70%;
+    height: 100%;
+    border-radius: 0;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 180px;
+    position: relative;
+  }
+
+  .container .image-section {
+    width: 100%;
+  }
+
+  .container .image-section label {
+    display: inline-block;
+    padding: 13px 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 3px dotted white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+  }
+
+  .container .image-container img {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .container form label {
+    text-align: right;
+    margin-bottom: 2px;
+  }
+
+  .container .settings-section .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 29px;
+    padding-bottom: 40px;
+  }
+
+  .container .settings-section .buttons button {
+    padding: 11px 30px;
+    border: none;
+    background-color: #137ef1;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 169px;
+    transition: background-color 0.3s ease;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    body{
+        background-color: #222;
+    }
+
+  .container {
+    background-color: none;
+    width: 70%;
+    height: 100%;
+    border-radius: 0;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 180px;
+    position: relative;
+  }
+
+  .container .image-section {
+    width: 100%;
+  }
+
+  .container .image-section label {
+    display: inline-block;
+    padding: 13px 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 3px dotted white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+  }
+
+  .container .image-container img {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .container form label {
+    text-align: right;
+    margin-bottom: 2px;
+  }
+
+  .container .settings-section .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 29px;
+    padding-bottom: 40px;
+  }
+
+  .container .settings-section .buttons button {
+    padding: 11px 30px;
+    border: none;
+    background-color: #137ef1;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 169px;
+    transition: background-color 0.3s ease;
+  }
+}
+
+
+.footer{
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.footer a{
+    color: #0f6acb;
+    font-weight: bold;
+    text-decoration: none;
+}   
+
+
+
